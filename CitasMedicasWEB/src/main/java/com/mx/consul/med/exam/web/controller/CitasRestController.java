@@ -61,7 +61,7 @@ public class CitasRestController {
 		return ResponseEntity.status(HttpStatus.OK).body(loResponse);
 	}
 
-	@PostMapping(value = "/guardar")
+	@GetMapping(value = "/consultar")
 	@ApiOperation(value="Cita", httpMethod = "POST", notes="Servicio que permite realizar el guardado de la cita")
 	@ApiResponses(value = {
 			@ApiResponse(code=200, message="Error, conexion a base de datos no disponible"),
